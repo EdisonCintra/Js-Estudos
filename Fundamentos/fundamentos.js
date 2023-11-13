@@ -182,3 +182,107 @@ do {
 
 
 console.log("//////////")
+
+
+//funções
+
+
+function cumprimentar(nome){
+    console.log("Olá!"+ nome)
+}
+
+cumprimentar("Edison");
+
+console.log("//////////")
+
+
+//escopo de variaveis
+
+let cor = "azul"
+function mostrarCor(){
+    let cor = "verde"
+    console.log(cor)
+}
+
+console.log(cor)
+mostrarCor()
+
+
+//hoisting
+
+testeHoisting()
+
+function testeHoisting(){
+    console.log("Deu certo")
+
+}
+
+
+//arrow function
+
+const testeArrow = () => console.log("Isso é um função também")
+
+testeArrow()
+
+
+//
+
+const minhaVariavel1 = ""
+const minhaVarivel2 = "Alguma coisa"
+
+if (minhaVariavel1){
+    console.log("Verdadeiro")
+} else{
+    console.log("Falso")
+}
+
+
+if (minhaVarivel2){
+    console.log("Verdadeiro")
+}else{
+    console.log("Falso")
+}
+
+
+//arrays, listas
+
+const numeros = [1,2,3,4,5] //array
+console.log(numeros)
+console.log(numeros[0])
+
+numeros.push(6) //adição de objetos ao array
+console.log(numeros)
+
+numeros.pop(6)
+console.log(numeros)
+
+//strings concatenação
+
+const minhaStringNova = "Hello World, "
+const MinhaString3 = minhaStringNova + "how are you?"
+console.log(MinhaString3)
+
+//interpolação
+const minhaString4 = `${minhaStringNova}how are you?`
+console.log(minhaString4)
+
+
+console.log(minhaString4.length)
+console.log(minhaString4[6])
+
+console.log(minhaString4.toUpperCase())
+
+//Data e hora
+
+const agora = Date()
+console.log(agora)
+
+const natal = new Date(2023, 11, 25)
+console.log(natal)
+
+
+//math
+console.log(Math.PI)
+console.log(Math.round(3.6))
+console.log(Math.sqrt(16))
+console.log(Math.pow(2,3))
