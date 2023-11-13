@@ -39,3 +39,6 @@ function converterHorario(horario24){
 }
 
 converterHorario("15:16")
+console.log("   ")
+
+
