@@ -193,3 +193,5 @@ obterValorComErro()
 //JSON (JavaScript Object Notation)
 
 console.log("2;05;32")
+
+
