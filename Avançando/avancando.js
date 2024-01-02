@@ -19,6 +19,7 @@ const numeros = [1,2,3,4,5,6]
 //const numeroPar = numeros.find((numPar) => console.log(numPar))
 
 //find so retorna o primeiro numero do criterio
+
 const numeroPar = numeros.find((numPar) => numPar % 2 === 0 )
 
 console.log(numeroPar)
@@ -191,7 +192,16 @@ async function obterValorComErro(){
 obterValorComErro()
 
 //JSON (JavaScript Object Notation)
+//facilita comunicação entre front e back
 
-console.log("2;05;32")
+const objeto = {nome : "Joao", idade : 30}
+
+const jsonString = JSON.stringify(objeto)
+
+console.log(jsonString)
+console.log(typeof jsonString)
 
 
+const json = '{"nome": "Joao", "idade" : 30}' //passando em json
+const objeto2 = JSON.parse(json) //transformando json em objeto
+console.log(objeto2)

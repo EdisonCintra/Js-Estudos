@@ -104,6 +104,11 @@ console.log(pai)
 
 const primeiroFilho = pai.firstChild; --> pegando o primeiro elemento filho
 
+const ultimoFilho = pai.lastChild; --> pegando o ultimo elemento filho
+
+<img src="../resources/Captura%20de%20tela%202024-01-02%20190234.png" alt="Child">
+
+--> Manipulação de Estrutura do DOM
 
 
 
