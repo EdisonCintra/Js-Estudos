@@ -110,6 +110,38 @@ const ultimoFilho = pai.lastChild; --> pegando o ultimo elemento filho
 
 --> Manipulação de Estrutura do DOM
 
+const novoElemento = document.createElement("div")
+
+novoElemento.textContent = "Div criada usando JS"
+
+document.body.appendChild(novoELemento) --> apenas insere no fim
+
+document.body.insertBefore(novoElemento, elemento4) --> inserino após
+
+documento.body.removeChild(novoElemento)
 
 
+--> Eventos
+
+const botao = document.querySelector("button")
+
+botao.addEventListener("click", function(){
+	console.log("Botão Clicado!")
+});
+
+
+const elemento5 = document.querySelector("#meuFormulario")
+
+elemento5.addEventListener("mouseover", function(){
+	console.log("O mouse passou por aqui!")
+});
+
+
+const campoInput = document.querySelector("#meuInput")
+
+campoInput.addEventListener("keydown", function(){
+	console.log("Tecla Pressionada!")
+});
+
+-->2.48.37
 
