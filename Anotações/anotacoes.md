@@ -1,6 +1,5 @@
+<h3> Estudos JavaSctipt </h3>
 
-
------
 Exemplo de arrow function ( const testeArrow = () => console.log("Isso é um função também") )
 
 push -> adicionar elemento em array pop -> retirar elemento do array
@@ -143,5 +142,38 @@ campoInput.addEventListener("keydown", function(){
 	console.log("Tecla Pressionada!")
 });
 
--->2.48.37
 
+const formulario = document.querySelector("form")
+
+formulario.addEventListener("submit", function (){
+	console.log("Form Enviado")
+})
+
+
+
+const formulario = document.querySelector("form")
+
+formulario.addEventListener("submit", function (event){
+
+	event.preventDefault(); --> Evitando o comportamento padrão
+
+	console.log("Form Enviado");
+})
+
+
+--> Propagação de Eventos no DOM
+
+document.querySelector("#elementoPAI").addEventListener("click", function (event){
+
+	event.stopPropagation(); --> Utilizando para que o elemento ocorra apenas nesse elemento, e não nos filhos
+	console.log("Elemento pai capturado")
+})
+
+
+-->Delegação de Eventos
+
+document.querySelector("#elementoPai").addEventListener("click", function (event){
+	if(event.target.matches(".classeDosFilhos")){ --> Essa verificação é usada para determinar se o alvo (o elemento específico que foi clicado) tem a classe CSS chamada classeDosFilhos.
+		console.log("Evento destinado para o filho!")
+	}
+})
